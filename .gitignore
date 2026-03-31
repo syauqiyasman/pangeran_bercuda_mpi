@@ -1,0 +1,14 @@
+# IDE
+.idea/
+
+# OS files
+.DS_Store
+
+# Archives
+*.tar
+
+# Compiled objects
+*.o
+
+# Logs
+logs/*
