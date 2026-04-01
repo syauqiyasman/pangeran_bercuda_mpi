@@ -12,3 +12,11 @@
 
 # Logs
 logs/*
+
+# Executetable
+# Ignore executables
+1-hello_mpi
+2-matmat
+2-matvec
+3-process_topologies
+
