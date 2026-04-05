@@ -25,8 +25,8 @@ void generate_diag_dominant(double *A, double *b, int N) {
                 row_sum += fabs(A[i * N + j]);
             }
         }
-        /* Make diagonal dominant: |a_ii| > sum of |a_ij| for j != i */
-        A[i * N + i] = row_sum + (double)(rand() % 100) / 10.0 + 1.0;
+        /* Make strongly diagonal dominant for fast convergence */
+        A[i * N + i] = row_sum * 2.0 + 1.0;
         b[i] = (double)(rand() % 100) / 10.0;
     }
 }
