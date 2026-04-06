@@ -1,9 +1,0 @@
---------------------------------------------------------------------------
-prterun was unable to launch the specified application as it lacked
-permissions to execute an executable:
-
-   Executable: /home/user04/pangeran_bercuda_mpi/1-hello_mpi.o
-   Node: Syauqis-MacBook-Air
-
-while attempting to start process rank 0.
---------------------------------------------------------------------------

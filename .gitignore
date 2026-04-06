@@ -11,7 +11,7 @@
 *.o
 
 # Logs
-logs/*
+*/logs/*
 
 # Executetable
 # Ignore executables
@@ -19,4 +19,4 @@ logs/*
 2-matmat
 2-matvec
 3-process_topologies
-
+4-jacobi
