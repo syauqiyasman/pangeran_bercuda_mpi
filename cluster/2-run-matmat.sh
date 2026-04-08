@@ -13,7 +13,7 @@ for N in 512 1024 2048 4096; do
     for NP in 2 4 8 16 32; do
         echo "Running N=$N with NP=$NP"
 
-        mpirun --oversubscribe --mca btl_top_if_exclude docker0,lo -np $NP \
+        mpirun --mca btl_tcp_if_exclude docker0,lo -np $NP \
             $PROGRAM $N 2>&1 | tee logs/2-${NAME}-results-N${N}_NP${NP}.txt
 
         echo "===================="

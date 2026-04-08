@@ -11,7 +11,7 @@ PROGRAM="/home/user04/pangeran_bercuda_mpi/3-process_topologies"
 for NP in 2 4 8 16 32; do
     echo "Running with NP=$NP..."
 
-    mpirun --oversubscribe --mca btl_top_if_exclude docker0,lo -np $NP \
+    mpirun --mca btl_tcp_if_exclude docker0,lo -np $NP \
         $PROGRAM 2>&1 | tee logs/3-process_topologies-results-NP${NP}.txt
 
     echo "===================="
